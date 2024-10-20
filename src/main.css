@@ -31,14 +31,11 @@
 
 header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
-  text-align: center;
+  place-items: center;
   width: 80%;
   border-radius: 12px;
   height: 4em;
   margin: 0 auto;
-  position: relative;
-  align-items: center;
   background-color: hsla(44, 60%, 85%, 0.7);
 }
 
