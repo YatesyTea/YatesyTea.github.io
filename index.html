@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Yates Dev - Index</title>
+    <title>Yates Dev</title>
     <link rel="icon" type="image/x-icon" href="./src/typing-icon.png" />
     <link rel="stylesheet" href="src/main.css" />
   </head>
 
   <body class="bg-1 text-1">
-    <header></header>
-    <main>
-      <div>
+    <header class="text-2">
+      <h1>Yates Dev</h1>
+      <a href="#home">Home</a>
+      <a href="#about-me">About Me</a>
+      <a href="#projects">Projects</a>
+    </header>
+    <main class="w-80">
+      <div id="home">
         <img
           class="rounded"
-          width="200px"
+          width="192px"
           src="https://avatars.githubusercontent.com/u/39750168?v=4"
           alt="profile-picture"
         />
@@ -29,23 +34,27 @@
             <p>Cambridge, United Kingdom</p>
           </div>
           <div>
+            <div class="link-badge">
+              <img src="./src/github-icon.svg" width="14px" />
+              <a href="https://github.com/YatesyTea">Github</a>
+            </div>
+            <div class="link-badge">
+                <img src="./src/linkedin-icon.svg" width="14px" />
+                <a href="https://www.linkedin.com/in/yates-dev/">LinkedIn</a>
+            </div>
+            <div class="link-badge">
+                <img src="./src/email-icon.svg" width="14px" />
+              <a href="mailto:exampleemail@mail.com">Email</a>
+            </div>
+          </div>
+          <div id="about-me">
             <h2>About Me</h2>
             <p>
               With 2 years of tech experience in Cambridge; I am a competent and
               well rounded full stack developer and tester.
             </p>
           </div>
-          <div>
-            <div>
-              <a href="https://github.com/YatesyTea">Github</a>
-            </div>
-            <div>
-              <a href="https://www.linkedin.com/in/yates-dev/">LinkedIn</a>
-            </div>
-            <div>
-              <a href="mailto:exampleemail@mail.com">Email</a>
-            </div>
-          </div>
+          <div id="projects"></div>
         </div>
       </div>
     </main>
