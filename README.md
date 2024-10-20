@@ -1,6 +1,6 @@
 YatesyTea.github.io Website
 
-Hosted on github pages
-Requires npm install of tailwind
+This is hosted on github pages.
 
+Uses plain js and html nothing more, nothing less.
 

@@ -1,0 +1,250 @@
+.rounded {
+  border-radius: 12px;
+}
+
+.link-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 12px;
+  padding: 8px;
+  border: 2px;
+  border-style: solid;
+  border-color: hsl(44, 40%, 75%);
+  background: hsl(44, 60%, 85%);
+}
+
+.link-badge a {
+  margin: 0;
+  text-decoration: none;
+  color: hsl(192, 10%, 50%);
+}
+
+.link-badge img {
+  margin-right: 4px;
+  margin-top: -3px;
+}
+
+.link-badge:hover {
+  transform: scale(1.03);
+  border-color: hsl(174, 48%, 48%);
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+  text-align: center;
+  width: 80%;
+  border-radius: 12px;
+  height: 4em;
+  margin: 0 auto;
+  position: relative;
+  align-items: center;
+  background-color: hsla(44, 60%, 85%, 0.7);
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2em;
+  background-color: hsla(44, 60%, 85%, 0.7);
+  padding-bottom: 20px;
+  border-radius: 12px;
+}
+
+body {
+  background-image: url("./background.svg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center;
+}
+
+/* Base Background */
+.bg-1 {
+  background-color: hsl(44, 80%, 90%);
+}
+
+.bg-2 {
+  background-color: hsl(44, 60%, 85%);
+}
+
+.bg-3 {
+  background-color: hsl(44, 40%, 75%);
+}
+
+.bg-4 {
+  background-color: hsl(44, 30%, 75%);
+}
+
+/* Primary Foreground/Text */
+.text-1 {
+  color: hsl(192, 10%, 50%);
+}
+
+.text-2 {
+  color: hsl(192, 15%, 45%);
+}
+
+.text-3 {
+  color: hsl(192, 20%, 40%);
+}
+
+.text-4 {
+  color: hsl(192, 25%, 35%);
+}
+
+/* Text Styles for Links/Interactive Elements */
+.a-1,
+a {
+  color: hsl(205, 72%, 47%);
+}
+
+.a-2,
+a.muted {
+  color: hsl(205, 62%, 47%);
+}
+
+.a-3,
+a.muted-darker {
+  color: hsl(205, 52%, 47%);
+}
+
+.a-4,
+a.muted-darkest {
+  color: hsl(205, 42%, 47%);
+  /* Most muted link */
+}
+
+/* Hover States for Links */
+a:hover {
+  color: hsl(205, 72%, 40%);
+}
+
+a.muted:hover {
+  color: hsl(205, 62%, 40%);
+}
+
+a.muted-darker:hover {
+  color: hsl(205, 52%, 40%);
+}
+
+a.muted-darkest:hover {
+  color: hsl(205, 42%, 40%);
+}
+
+/* Active States for Links */
+a:active {
+  color: hsl(205, 72%, 35%);
+}
+
+a.muted:active {
+  color: hsl(205, 62%, 35%);
+}
+
+a.muted-darker:active {
+  color: hsl(205, 52%, 35%);
+}
+
+a.muted-darkest:active {
+  color: hsl(205, 42%, 35%);
+}
+
+/* Focus States for Links */
+a:focus {
+  outline: 2px solid hsl(205, 72%, 50%);
+}
+
+a.muted:focus {
+  outline: 2px solid hsl(205, 62%, 50%);
+}
+
+a.muted-darker:focus {
+  outline: 2px solid hsl(205, 52%, 50%);
+}
+
+a.muted-darkest:focus {
+  outline: 2px solid hsl(205, 42%, 50%);
+}
+
+/* Saving for Later */
+/* 
+
+.accent-1 {
+  background-color: hsl(205, 72%, 47%);
+}
+
+.accent-2 {
+  background-color: hsl(205, 62%, 47%);
+}
+
+.accent-3 {
+  background-color: hsl(205, 52%, 47%);
+}
+
+.accent-4 {
+  background-color: hsl(205, 42%, 47%);
+}
+
+
+.secondary-accent-1 {
+  background-color: hsl(174, 48%, 48%);
+}
+
+.secondary-accent-2 {
+  background-color: hsl(174, 38%, 48%);
+}
+
+.secondary-accent-3 {
+  background-color: hsl(174, 28%, 48%);
+}
+
+.secondary-accent-4 {
+  background-color: hsl(174, 18%, 48%);
+}
+
+.success-1 {
+  background-color: hsl(82, 71%, 38%);
+}
+
+.success-2 {
+  background-color: hsl(82, 61%, 38%);
+}
+
+.success-3 {
+  background-color: hsl(82, 51%, 38%);
+}
+
+.success-4 {
+  background-color: hsl(82, 41%, 38%);
+}
+
+.warning-1 {
+  background-color: hsl(45, 100%, 41%);
+}
+
+.warning-2 {
+  background-color: hsl(45, 90%, 41%);
+}
+
+.warning-3 {
+  background-color: hsl(45, 80%, 41%);
+}
+
+.warning-4 {
+  background-color: hsl(45, 70%, 41%);
+}
+
+.error-1 {
+  background-color: hsl(3, 74%, 52%);
+}
+
+.error-2 {
+  background-color: hsl(3, 64%, 52%);
+}
+
+.error-3 {
+  background-color: hsl(3, 54%, 52%);
+}
+
+.error-4 {
+  background-color: hsl(3, 44%, 52%);
+} */

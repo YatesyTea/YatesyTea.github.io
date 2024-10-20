@@ -3,90 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Yates Dev - Index</title>
+    <title>Yates Dev</title>
     <link rel="icon" type="image/x-icon" href="./src/typing-icon.png" />
-    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="src/main.css" />
   </head>
 
-  <body
-    class="bg-gradient-to-r from-s-base2 via-s-base1 to-s-base2 text-s-base00 text-xl font-thin"
-  >
-    <div class="p-8 grid sm:grid-cols-12 gap-y-4 gap-x-4">
-      <div
-        class="grid place-items-center bg-s-base2 rounded-3xl sm:col-start-2 sm:col-span-2 shadow-sm shadow-s-base02"
-      >
+  <body class="bg-1 text-1">
+    <header class="text-2">
+      <h1>Yates Dev</h1>
+      <a href="#home">Home</a>
+      <a href="#about-me">About Me</a>
+      <a href="#projects">Projects</a>
+    </header>
+    <main class="w-80">
+      <div id="home">
         <img
-          class="rounded-full w-64 p-2 aspec-square"
+          class="rounded"
+          width="192px"
           src="https://avatars.githubusercontent.com/u/39750168?v=4"
           alt="profile-picture"
         />
-      </div>
-      <div
-        class="bg-s-base2 rounded-3xl col-span-8 p-3 shadow-sm shadow-s-base02"
-      >
-        <div class="text-4xl">
-          <p class="text-s-base01">
-            Daniel Yates - <span class="text-s-base00 text-3xl">YatesyTea</span>
-          </p>
-        </div>
         <div>
-          <p>Software Engineer</p>
-        </div>
-        <div>
-          <p>Cambridge, United Kingdom</p>
-        </div>
-        <div class="grid grid-cols-3 grid-rows-3 mt-4 text-s-cyan text-xl">
-          <div class="row-start-3 hover:animate-pulse hover:text-s-magenta">
-            <a href="https://github.com/YatesyTea">Github</a>
+          <div>
+            <p>Daniel Yates</p>
           </div>
-          <div class="row-start-3 hover:animate-pulse hover:text-s-magenta">
-            <a href="https://www.linkedin.com/in/yates-dev/">LinkedIn</a>
+          <div>
+            <p>Software Test Engineer</p>
           </div>
-          <div class="row-start-3 hover:animate-pulse hover:text-s-magenta">
-            <a href="mailto:exampleemail@mail.com">Email</a>
+          <div>
+            <p>Cambridge, United Kingdom</p>
           </div>
+          <div>
+            <div class="link-badge">
+              <img src="./src/github-icon.svg" width="14px" />
+              <a href="https://github.com/YatesyTea">Github</a>
+            </div>
+            <div class="link-badge">
+                <img src="./src/linkedin-icon.svg" width="14px" />
+                <a href="https://www.linkedin.com/in/yates-dev/">LinkedIn</a>
+            </div>
+            <div class="link-badge">
+                <img src="./src/email-icon.svg" width="14px" />
+              <a href="mailto:exampleemail@mail.com">Email</a>
+            </div>
+          </div>
+          <div id="about-me">
+            <h2>About Me</h2>
+            <p>
+              With 2 years of tech experience in Cambridge; I am a competent and
+              well rounded full stack developer and tester.
+            </p>
+          </div>
+          <div id="projects"></div>
         </div>
       </div>
-      <div
-        class="bg-s-base2 rounded-3xl col-start-2 col-span-4 p-2 shadow-sm shadow-s-base02 text-3xl"
-      >
-        <div class="grid text-center"><h1>Skills</h1></div>
-        <div class="flex overflow-x-hidden snap-mandatory snap-x scroll-smooth p-0 pt-2">
-          <!--Slider-->
-          <img
-            class="snap-start"
-            id="slide-1"
-            src="https://img.ev.mu/images/articles/960x/987708.jpg"
-            alt="blue moon"
-          />
-          <img
-            class="snap-start"
-            id="slide-2"
-            src="https://mwib.org.uk/wp-content/uploads/2015/09/IMG_29691.JPG"
-          />
-          <img
-            class="snap-start"
-            id="slide-3"
-            src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Moon_nearside_LRO.jpg"
-          />
-        </div>
-        <div class="grid grid-cols-9 text-center text-s-cyan p-2">
-          <!--Slider Nav-->
-          <a class="hover:text-s-magenta hover:animate-pulse col-start-4" href="#slide-1">①</a>
-          <a class="hover:text-s-magenta hover:animate-pulse" href="#slide-2">②</a>
-          <a class="hover:text-s-magenta hover:animate-pulse" href="#slide-3">③</a>
-        </div>
-      </div>
-      <div
-        class="bg-s-base2 rounded-3xl col-span-6 shaddow-s-cyan shaddow-inner p-2 shadow-sm shadow-s-base02"
-      ></div>
-    </div>
+    </main>
   </body>
 </html>
-
-<!-- <div class="grid justify-center content-center">
-          <h1 class="text-s-base00 text-4xl">Projects</h1>
-          <div class="grid grid-flow-col">
-            <h1>Hello</h1>
-          </div>
-        </div> -->
