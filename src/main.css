@@ -1,3 +1,18 @@
+/* Base CSS */
+body {
+  width: 80vw;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header h1 {
+  font-family: 'Great Vibes', cursive;
+}
+
+/* Small Utilities */
+
 .rounded {
   border-radius: 12px;
 }
@@ -29,31 +44,10 @@
   border-color: hsl(174, 48%, 48%);
 }
 
-header {
-  display: grid;
-  place-items: center;
-  width: 80%;
-  border-radius: 12px;
-  height: 4em;
-  margin: 0 auto;
-  background-color: hsla(44, 60%, 85%, 0.7);
-}
 
-main {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 2em;
-  background-color: hsla(44, 60%, 85%, 0.7);
-  padding-bottom: 20px;
-  border-radius: 12px;
-}
 
-body {
-  background-image: url("./background.svg");
-  background-size: cover;
-  background-repeat: repeat-y;
-  background-position: center;
-}
+
+/* Colours */
 
 /* Base Background */
 .bg-1 {
@@ -161,87 +155,3 @@ a.muted-darker:focus {
 a.muted-darkest:focus {
   outline: 2px solid hsl(205, 42%, 50%);
 }
-
-/* Saving for Later */
-/* 
-
-.accent-1 {
-  background-color: hsl(205, 72%, 47%);
-}
-
-.accent-2 {
-  background-color: hsl(205, 62%, 47%);
-}
-
-.accent-3 {
-  background-color: hsl(205, 52%, 47%);
-}
-
-.accent-4 {
-  background-color: hsl(205, 42%, 47%);
-}
-
-
-.secondary-accent-1 {
-  background-color: hsl(174, 48%, 48%);
-}
-
-.secondary-accent-2 {
-  background-color: hsl(174, 38%, 48%);
-}
-
-.secondary-accent-3 {
-  background-color: hsl(174, 28%, 48%);
-}
-
-.secondary-accent-4 {
-  background-color: hsl(174, 18%, 48%);
-}
-
-.success-1 {
-  background-color: hsl(82, 71%, 38%);
-}
-
-.success-2 {
-  background-color: hsl(82, 61%, 38%);
-}
-
-.success-3 {
-  background-color: hsl(82, 51%, 38%);
-}
-
-.success-4 {
-  background-color: hsl(82, 41%, 38%);
-}
-
-.warning-1 {
-  background-color: hsl(45, 100%, 41%);
-}
-
-.warning-2 {
-  background-color: hsl(45, 90%, 41%);
-}
-
-.warning-3 {
-  background-color: hsl(45, 80%, 41%);
-}
-
-.warning-4 {
-  background-color: hsl(45, 70%, 41%);
-}
-
-.error-1 {
-  background-color: hsl(3, 74%, 52%);
-}
-
-.error-2 {
-  background-color: hsl(3, 64%, 52%);
-}
-
-.error-3 {
-  background-color: hsl(3, 54%, 52%);
-}
-
-.error-4 {
-  background-color: hsl(3, 44%, 52%);
-} */
