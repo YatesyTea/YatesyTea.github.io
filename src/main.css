@@ -2,7 +2,8 @@
 body {
   width: 80vw;
   display: grid;
-  place-content: center;
+  place-items: center;
+  text-align: center;
   margin: 0 auto;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -11,10 +12,23 @@ header h1 {
   font-family: 'Great Vibes', cursive;
 }
 
+header a {
+  text-decoration: none;
+  color: hsl(205, 72%, 47%);
+}
+
+main {
+  margin-top: 3em;
+}
+
 /* Small Utilities */
 
 .rounded {
   border-radius: 12px;
+}
+
+mt-1 {
+  margin-top: 1rem;
 }
 
 .link-badge {
@@ -28,7 +42,7 @@ header h1 {
   background: hsl(44, 60%, 85%);
 }
 
-.link-badge a {
+.link-badge p {
   margin: 0;
   text-decoration: none;
   color: hsl(192, 10%, 50%);
@@ -42,6 +56,8 @@ header h1 {
 .link-badge:hover {
   transform: scale(1.03);
   border-color: hsl(174, 48%, 48%);
+  color: hsl(205, 62%, 47%);
+  
 }
 
 
