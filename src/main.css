@@ -101,12 +101,12 @@ body {
   margin: 0 auto;
 }
 
-h1 {
-  font-family: Verdana, Geneva, sans-serif;
-}
-
 header h1 {
   cursor: pointer;
+}
+
+.header-font {
+  font-family: 'Trebuchet MS', sans-serif;
   color: var(--text-4);
 }
 
@@ -169,6 +169,7 @@ mt-1 {
 .link-badge p {
   margin: 0;
   text-decoration: none;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 .link-badge img {
