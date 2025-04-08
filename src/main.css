@@ -6,7 +6,11 @@ body {
   grid-template-rows: auto 1fr;
   text-align: center;
   margin: 0 auto;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+h1 {
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 header h1 {
@@ -18,6 +22,7 @@ header a {
   text-decoration: none;
   margin-left: 0.75em;
   color: hsl(192, 25%, 35%);
+  font-family: 'Courier New', Courier, monospace;
 }
 
 header a:hover {
@@ -25,15 +30,34 @@ header a:hover {
 }
 
 main {
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 2em;
+}
+
+.main-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.job:first-of-type {
+  border-top: dashed 1px hsl(205, 62%, 35%);
+}
+
+.job {
+  text-align: justify;
+  border-bottom: dashed 1px hsl(205, 62%, 35%);
+  
 }
 
 /* Small Utilities */
 
 .rounded {
   border-radius: 12px;
+}
+
+.selected {
+  border-bottom: solid 2px hsl(0, 0%, 85%);
 }
 
 mt-1 {
