@@ -32,6 +32,7 @@ header a:hover {
 main {
   font-family: 'Courier New', Courier, monospace;
   margin-top: 2em;
+  text-align: justify;
 }
 
 .main-center {
@@ -40,12 +41,11 @@ main {
   align-items: center;
 }
 
-.job:first-of-type {
+.dotted-section:first-of-type {
   border-top: dashed 1px hsl(205, 62%, 35%);
 }
 
-.job {
-  text-align: justify;
+.dotted-section {
   border-bottom: dashed 1px hsl(205, 62%, 35%);
   
 }
