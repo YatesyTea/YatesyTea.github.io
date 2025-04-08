@@ -1,4 +1,49 @@
-/* Base CSS */
+:root {
+  /* Base Background Colors */
+  --bg-1: hsl(44, 80%, 90%);
+  --bg-2: hsl(44, 60%, 85%);
+  --bg-3: hsl(44, 40%, 75%);
+  --bg-4: hsl(44, 30%, 75%);
+
+  /* Primary Foreground/Text Colors */
+  --text-1: hsl(192, 10%, 50%);
+  --text-2: hsl(192, 15%, 45%);
+  --text-3: hsl(192, 20%, 40%);
+  --text-4: hsl(192, 25%, 35%);
+
+  /* Link Colors */
+  --a-1: hsl(205, 72%, 47%);
+  --a-2: hsl(205, 62%, 47%);
+  --a-3: hsl(205, 52%, 47%);
+  --a-4: hsl(205, 42%, 47%);
+
+  /* Hover States */
+  --a-hover-1: hsl(205, 72%, 40%);
+  --a-hover-2: hsl(205, 62%, 40%);
+  --a-hover-3: hsl(205, 52%, 40%);
+  --a-hover-4: hsl(205, 42%, 40%);
+
+  /* Active States */
+  --a-active-1: hsl(205, 72%, 35%);
+  --a-active-2: hsl(205, 62%, 35%);
+  --a-active-3: hsl(205, 52%, 35%);
+  --a-active-4: hsl(205, 42%, 35%);
+
+  /* Focus States */
+  --a-focus-1: hsl(205, 72%, 50%);
+  --a-focus-2: hsl(205, 62%, 50%);
+  --a-focus-3: hsl(205, 52%, 50%);
+  --a-focus-4: hsl(205, 42%, 50%);
+
+  /* Border Colors */
+  --border-dotted: hsl(205, 62%, 35%);
+  --border-link-badge: hsl(44, 40%, 75%);
+  --border-link-badge-hover: hsl(205, 62%, 47%);
+
+  /* Background for Link Badge */
+  --bg-link-badge: hsl(44, 60%, 85%);
+}
+
 body {
   width: 80vw;
   height: 100vh;
@@ -6,7 +51,6 @@ body {
   grid-template-rows: auto 1fr;
   text-align: center;
   margin: 0 auto;
-  /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
 h1 {
@@ -15,18 +59,18 @@ h1 {
 
 header h1 {
   cursor: pointer;
-  color: hsl(192, 25%, 35%);
+  color: var(--text-4);
 }
 
 header a {
   text-decoration: none;
   margin-left: 0.75em;
-  color: hsl(192, 25%, 35%);
+  color: var(--text-4);
   font-family: 'Courier New', Courier, monospace;
 }
 
 header a:hover {
-  color: hsl(205, 72%, 40%);
+  color: var(--a-hover-1);
 }
 
 main {
@@ -42,15 +86,12 @@ main {
 }
 
 .dotted-section:first-of-type {
-  border-top: dashed 1px hsl(205, 62%, 35%);
+  border-top: dashed 1px var(--border-dotted);
 }
 
 .dotted-section {
-  border-bottom: dashed 1px hsl(205, 62%, 35%);
-  
+  border-bottom: dashed 1px var(--border-dotted);
 }
-
-/* Small Utilities */
 
 .rounded {
   border-radius: 12px;
@@ -72,8 +113,8 @@ mt-1 {
   padding: 8px;
   border: 2px;
   border-style: solid;
-  border-color: hsl(44, 40%, 75%);
-  background: hsl(44, 60%, 85%);
+  border-color: var(--border-link-badge);
+  background: var(--bg-link-badge);
 }
 
 .link-badge p {
@@ -88,119 +129,106 @@ mt-1 {
 
 .link-badge:hover {
   transform: scale(1.03);
-  border-color: hsl(205, 62%, 47%);
-  color: hsl(205, 62%, 47%);
-  
+  border-color: var(--border-link-badge-hover);
+  color: var(--border-link-badge-hover);
 }
 
-
-
-
-/* Colours */
-
-/* Base Background */
 .bg-1 {
-  background-color: hsl(44, 80%, 90%);
+  background-color: var(--bg-1);
 }
 
 .bg-2 {
-  background-color: hsl(44, 60%, 85%);
+  background-color: var(--bg-2);
 }
 
 .bg-3 {
-  background-color: hsl(44, 40%, 75%);
+  background-color: var(--bg-3);
 }
 
 .bg-4 {
-  background-color: hsl(44, 30%, 75%);
+  background-color: var(--bg-4);
 }
 
-/* Primary Foreground/Text */
 .text-1 {
-  color: hsl(192, 10%, 50%);
+  color: var(--text-1);
 }
 
 .text-2 {
-  color: hsl(192, 15%, 45%);
+  color: var(--text-2);
 }
 
 .text-3 {
-  color: hsl(192, 20%, 40%);
+  color: var(--text-3);
 }
 
 .text-4 {
-  color: hsl(192, 25%, 35%);
+  color: var(--text-4);
 }
 
-/* Text Styles for Links/Interactive Elements */
 .a-1,
 a {
-  color: hsl(205, 72%, 47%);
+  color: var(--a-1);
 }
 
 .a-2,
 a.muted {
-  color: hsl(205, 62%, 47%);
+  color: var(--a-2);
 }
 
 .a-3,
 a.muted-darker {
-  color: hsl(205, 52%, 47%);
+  color: var(--a-3);
 }
 
 .a-4,
 a.muted-darkest {
-  color: hsl(205, 42%, 47%);
-  /* Most muted link */
+  color: var(--a-4);
 }
 
-/* Hover States for Links */
 a:hover {
-  color: hsl(205, 72%, 40%);
+  color: var(--a-hover-1);
 }
 
 a.muted:hover {
-  color: hsl(205, 62%, 40%);
+  color: var(--a-hover-2);
 }
 
 a.muted-darker:hover {
-  color: hsl(205, 52%, 40%);
+  color: var(--a-hover-3);
 }
 
 a.muted-darkest:hover {
-  color: hsl(205, 42%, 40%);
+  color: var(--a-hover-4);
 }
 
-/* Active States for Links */
 a:active {
-  color: hsl(205, 72%, 35%);
+  color: var(--a-active-1);
 }
 
 a.muted:active {
-  color: hsl(205, 62%, 35%);
+  color: var(--a-active-2);
 }
 
 a.muted-darker:active {
-  color: hsl(205, 52%, 35%);
+  color: var(--a-active-3);
 }
 
 a.muted-darkest:active {
-  color: hsl(205, 42%, 35%);
+  color: var(--a-active-4);
 }
 
-/* Focus States for Links */
 a:focus {
-  outline: 2px solid hsl(205, 72%, 50%);
+  outline: 2px solid var(--a-focus-1);
 }
 
 a.muted:focus {
-  outline: 2px solid hsl(205, 62%, 50%);
+  outline: 2px solid var(--a-focus-2);
 }
 
 a.muted-darker:focus {
-  outline: 2px solid hsl(205, 52%, 50%);
+  outline: 2px solid var(--a-focus-3);
 }
 
 a.muted-darkest:focus {
-  outline: 2px solid hsl(205, 42%, 50%);
+  outline: 2px solid var(--a-focus-4);
 }
