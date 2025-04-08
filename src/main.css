@@ -124,7 +124,7 @@ header a:hover {
 main {
   font-family: 'Courier New', Courier, monospace;
   margin-top: 2em;
-  text-align: justify;
+  text-align: left;
 }
 
 .main-center {
@@ -132,6 +132,10 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.dotted-section ul {
+  margin-right: 3em;
 }
 
 .dotted-section:first-of-type {
