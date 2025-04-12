@@ -3,7 +3,7 @@ import Layout from './src/layouts/Layout.astro';
 ---
 
 <Layout>
-  <main class="w-80 main-center">
+  <main class="main-center">
     <div id="home">
       <div>
         <div>
@@ -13,15 +13,15 @@ import Layout from './src/layouts/Layout.astro';
           <h4>. SDET . Sewing . Keyboards .</h4>
         </div>
         <div>
-          <div class="link-badge" onClick={() => window.open('https://www.github.com/YatesyTea', '_blank')}>
+          <div class="link-badge" @onClick={() => window.open('https://www.github.com/YatesyTea', '_blank')}>
             <img src="/src/github-icon.svg" alt="" width="14px" aria-hidden="true" />
             <p>Github</p>
           </div>
-          <div class="link-badge" onClick={() => window.open('https://www.linkedin.com/in/yates-dev/', '_blank')}>
+          <div class="link-badge" @onClick={() => window.open('https://www.linkedin.com/in/yates-dev/', '_blank')}>
             <img src="/src/linkedin-icon.svg" alt="" width="14px" aria-hidden="true" />
             <p>LinkedIn</p>
           </div>
-          <div class="link-badge" onClick={() => window.open('mailto:exampleemail@mail.com', '_blank')}>
+          <div class="link-badge" @onClick={() => window.open('mailto:exampleemail@mail.com', '_blank')}>
             <img src="/src/email-icon.svg" width="14px" aria-hidden="true" />
             <p>Email</p>
           </div>
