@@ -92,6 +92,10 @@
   }
 }
 
+html {
+  background-color: var(--bg-1);
+}
+
 body {
   width: 80vw;
   height: 100vh;
@@ -158,34 +162,6 @@ mt-1 {
   margin-top: 1rem;
 }
 
-.link-badge {
-  display: inline-flex;
-  cursor: pointer;
-  align-items: center;
-  border-radius: 12px;
-  padding: 8px;
-  border: 2px;
-  border-style: solid;
-  border-color: var(--border-link-badge);
-  background: var(--bg-link-badge);
-}
-
-.link-badge p {
-  margin: 0;
-  text-decoration: none;
-  font-family: 'Trebuchet MS', sans-serif;
-}
-
-.link-badge img {
-  margin-right: 4px;
-  margin-top: -3px;
-}
-
-.link-badge:hover {
-  transform: scale(1.03);
-  border-color: var(--border-link-badge-hover);
-  color: var(--border-link-badge-hover);
-}
 
 .bg-1 {
   background-color: var(--bg-1);
