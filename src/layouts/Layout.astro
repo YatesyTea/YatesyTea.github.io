@@ -1,6 +1,7 @@
 ---
-export const Layout = ({ children }) => {
+export const Layout = ({ children }) => {};
 ---
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,6 +13,7 @@ export const Layout = ({ children }) => {
   </head>
   <body class="bg-1 text-4">
     <header class="text-2">
+    
       <h1 class="header-font" onclick="location.href='/'">Yates Dev</h1>
       <div class="location-links">
         <a href="/about-me">About Me</a>
@@ -19,6 +21,6 @@ export const Layout = ({ children }) => {
         <a href="/projects">Projects</a>
       </div>
     </header>
-    {children}
+    <slot />
   </body>
 </html>
