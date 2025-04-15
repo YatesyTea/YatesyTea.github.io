@@ -15,9 +15,9 @@ const { docLink, ghLink, demoLink } = links;
   <div class="project-info">
     <h2>{title}</h2>
     <slot />
-    {docLink && <LinkBadge text="Documentation" link={docLink} />}
-    {ghLink && <LinkBadge text="GitHub" link={ghLink} />}
-    {demoLink && <LinkBadge text="Demo" link={demoLink} />}
+    {ghLink && <LinkBadge icon="/src/assets/github-icon.svg" text="GitHub" link={ghLink} />}
+    {demoLink && <LinkBadge text="Site" link={demoLink} />}
+    {docLink && <LinkBadge text="Read More" link={docLink} />}
   </div>
 </div>
 
