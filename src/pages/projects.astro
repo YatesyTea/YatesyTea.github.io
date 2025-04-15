@@ -2,10 +2,11 @@
 import Layout from "../layouts/Layout.astro";
 import ProjectDisplay from "../components/projectDisplay.astro";
 import thoughtCatalog from "../assets/thought-catalogue.png";
+import recipeApp from "../assets/recipe-app.png";
 ---
 
 <Layout>
-  <main class="w-80 mt-1">
+  <main class="mt-1">
     <ProjectDisplay
       title="Stuti's Poem of the Day"
       image={{
@@ -29,6 +30,16 @@ import thoughtCatalog from "../assets/thought-catalogue.png";
         it serve as minimal a payload as possible.
       </p>
     </ProjectDisplay>
+    <ProjectDisplay
+      title="Recipe Recommendation System"
+      image={{
+        src: recipeApp.src,
+        alt: "Photo by Thought-Catalog on Unsplash",
+      }}
+      links={{ docLink: "./recipe-rec" }}
+    >
+      <p>My final year project for university</p>
+    </ProjectDisplay>
   </main>
 </Layout>
 
@@ -37,5 +48,9 @@ import thoughtCatalog from "../assets/thought-catalogue.png";
     margin-left: auto;
     margin-right: auto;
     width: clamp(400px, 80%, 700px);
+  }
+
+  .project-display {
+    margin-bottom: 16px;
   }
 </style>
