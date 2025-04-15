@@ -6,12 +6,29 @@ import thoughtCatalog from "../assets/thought-catalogue.png";
 
 <Layout>
   <main class="w-80 mt-1">
-      <ProjectDisplay
-        title="Stuti's Poem of the Day"
-        description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur saepe perferendis nihil inventore eos id? Nam inventore hic corrupti itaque maxime delectus sed commodi, veniam, maiores accusamus cumque minus culpa!"
-        image={{src: thoughtCatalog.src, alt: "Photo by Thought-Catalog on Unsplash"}}
-        links={{ docLink: "./stuti-poem-of-the-day", ghLink: "https://github.com/YatesyTea/stooti-poems-v2", demoLink: "https://stooti-poems.fly.dev/" }}
-      />
+    <ProjectDisplay
+      title="Stuti's Poem of the Day"
+      image={{
+        src: thoughtCatalog.src,
+        alt: "Photo by Thought-Catalog on Unsplash",
+      }}
+      links={{
+        docLink: "./stuti-poem-of-the-day",
+        ghLink: "https://github.com/YatesyTea/stooti-poems-v2",
+        demoLink: "https://stooti-poems.fly.dev/",
+      }}
+    >
+      <p>
+        A simple httpserver written in Hono and Bun, with a readonly SQLite
+        instance wrapped in the application.
+      </p>
+      <p>
+        It was made for my partner Stuti as she was away and I wanted to give
+        her something as a nice little daily update. A requirement was that it
+        should be able to load in locations with poor internet, therefore I made
+        it serve as minimal a payload as possible.
+      </p>
+    </ProjectDisplay>
   </main>
 </Layout>
 
