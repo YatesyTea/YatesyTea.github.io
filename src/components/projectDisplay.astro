@@ -4,7 +4,7 @@ import LinkBadge from "./linkBadge.astro";
 interface Props {
   title: string;
   image: { src: string; alt: string };
-  links: { docLink: string; ghLink?: string; demoLink?: string };
+  links: { docLink?: string; ghLink?: string; demoLink?: string };
 }
 const { title, image, links } = Astro.props;
 const { docLink, ghLink, demoLink } = links;

@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ProjectDisplay from "../components/projectDisplay.astro";
+import moveMap from "../assets/move-map.png";
 import thoughtCatalog from "../assets/thought-catalogue.png";
 import recipeApp from "../assets/recipe-app.png";
 ---
@@ -8,13 +9,37 @@ import recipeApp from "../assets/recipe-app.png";
 <Layout>
   <main class="mt-1">
     <ProjectDisplay
+      title="Move Map"
+      image={{
+        src: moveMap.src,
+        alt: "Map displaying an area",
+      }}
+      links={{}}
+    >
+      <p>
+        An in progress application trying to solve the problem of how far away
+        will I be from work if I move here?
+      </p>
+      <p>This application will be taking in the inputs of a:</p>
+      <ul>
+        <li>Location</li><li>Acceptable Travel Distance</li><li>
+          Maximum On Foot / Bike Distance
+        </li>
+      </ul>
+      <p>
+        And will then go on to output a polyline which can then be recreated on
+        sites such as Zoopla or RightMove to set up alerts for the house
+        listings in the area.
+      </p>
+    </ProjectDisplay>
+
+    <ProjectDisplay
       title="Stuti's Poem of the Day"
       image={{
         src: thoughtCatalog.src,
         alt: "Photo by Thought-Catalog on Unsplash",
       }}
       links={{
-        docLink: "./stuti-poem-of-the-day",
         ghLink: "https://github.com/YatesyTea/stooti-poems-v2",
         demoLink: "https://stooti-poems.fly.dev/",
       }}
@@ -34,9 +59,9 @@ import recipeApp from "../assets/recipe-app.png";
       title="Recipe Recommendation System"
       image={{
         src: recipeApp.src,
-        alt: "Photo by Thought-Catalog on Unsplash",
+        alt: "Recipe App Splash",
       }}
-      links={{ docLink: "./recipe-rec" }}
+      links={{ ghLink: "https://github.com/YatesyTea/dspFlask" }}
     >
       <p>My final year project for university</p>
     </ProjectDisplay>
