@@ -20,11 +20,24 @@ const isCurrentUrl = (url: string) => {
     <header class="text-2">
       <h1 class="header-font" onclick="location.href='/'">Yates Dev</h1>
       <div class="location-links">
-        <a href="/about-me" class={isCurrentUrl('/about-me') ? 'active' : ''}>About Me</a>
-        <a href="/experience" class={isCurrentUrl('/experience') ? 'active' : ''}>Experience</a>
-        <a href="/projects" class={isCurrentUrl('/projects') ? 'active' : ''}>Projects</a>
+        <a href="/about-me" class={isCurrentUrl("/about-me") ? "active" : ""}
+          >About Me</a
+        >
+        <a
+          href="/experience"
+          class={isCurrentUrl("/experience") ? "active" : ""}>Experience</a
+        >
+        <a href="/projects" class={isCurrentUrl("/projects") ? "active" : ""}
+          >Projects</a
+        >
       </div>
     </header>
     <slot />
   </body>
-  </html>
+</html>
+
+<style>
+  .active {
+    border-bottom: 2px solid var(--border-link-badge);
+  }
+</style>
