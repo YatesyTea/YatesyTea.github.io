@@ -1,0 +1,44 @@
+---
+interface Props {
+  text: string;
+  link: string;
+  icon?: string;
+}
+
+const { icon, text, link } = Astro.props;
+---
+
+<div class="link-badge" @onClick={() => window.open(link, "_blank")}>
+  {icon && <img src={icon} alt="" width="14px" aria-hidden="true" />}
+  <p>{text}</p>
+</div>
+
+<style scoped>
+  .link-badge {
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 12px;
+    padding: 8px;
+    border: 2px;
+    border-style: solid;
+    border-color: var(--border-link-badge);
+    background: var(--bg-link-badge);
+  }
+
+  .link-badge p {
+    margin: 0;
+    text-decoration: none;
+    font-family: "Trebuchet MS", sans-serif;
+  }
+
+  .link-badge img {
+    margin-right: 4px;
+  }
+
+  .link-badge:hover {
+    transform: scale(1.03);
+    border-color: var(--border-link-badge-hover);
+    color: var(--border-link-badge-hover);
+  }
+</style>

@@ -1,0 +1,43 @@
+---
+import LinkBadge from "./linkBadge.astro";
+
+interface Props {
+  title: string;
+  image: { src: string; alt: string };
+  links: { docLink?: string; ghLink?: string; demoLink?: string };
+}
+const { title, image, links } = Astro.props;
+const { docLink, ghLink, demoLink } = links;
+---
+
+<div class="project-display">
+  <img src={image.src} alt={image.alt} />
+  <div class="project-info">
+    <h2>{title}</h2>
+    <slot />
+    {ghLink && <LinkBadge icon="/src/assets/github-icon.svg" text="GitHub" link={ghLink} />}
+    {demoLink && <LinkBadge text="Site" link={demoLink} />}
+    {docLink && <LinkBadge text="Read More" link={docLink} />}
+  </div>
+</div>
+
+<style>
+  img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .project-display {
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    border: 2px solid;
+    overflow: hidden;
+  }
+  
+  .project-info {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+</style>

@@ -1,0 +1,81 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectDisplay from "../components/projectDisplay.astro";
+import moveMap from "../assets/move-map.png";
+import thoughtCatalog from "../assets/thought-catalogue.png";
+import recipeApp from "../assets/recipe-app.png";
+---
+
+<Layout>
+  <main class="mt-1">
+    <ProjectDisplay
+      title="Move Map"
+      image={{
+        src: moveMap.src,
+        alt: "Map displaying an area",
+      }}
+      links={{}}
+    >
+      <p>
+        An in progress application trying to solve the problem of how far away
+        will I be from work if I move here?
+      </p>
+      <p>This application will be taking in the inputs of a:</p>
+      <ul>
+        <li>Location</li><li>Acceptable Travel Distance</li><li>
+          Maximum On Foot / Bike Distance
+        </li>
+      </ul>
+      <p>
+        And will then go on to output a polyline which can then be recreated on
+        sites such as Zoopla or RightMove to set up alerts for the house
+        listings in the area.
+      </p>
+    </ProjectDisplay>
+
+    <ProjectDisplay
+      title="Stuti's Poem of the Day"
+      image={{
+        src: thoughtCatalog.src,
+        alt: "Photo by Thought-Catalog on Unsplash",
+      }}
+      links={{
+        ghLink: "https://github.com/YatesyTea/stooti-poems-v2",
+        demoLink: "https://stooti-poems.fly.dev/",
+      }}
+    >
+      <p>
+        A simple httpserver written in Hono and Bun, with a readonly SQLite
+        instance wrapped in the application.
+      </p>
+      <p>
+        It was made for my partner Stuti as she was away and I wanted to give
+        her something as a nice little daily update. A requirement was that it
+        should be able to load in locations with poor internet, therefore I made
+        it serve as minimal a payload as possible.
+      </p>
+    </ProjectDisplay>
+    <ProjectDisplay
+      title="Recipe Recommendation System"
+      image={{
+        src: recipeApp.src,
+        alt: "Recipe App Splash",
+      }}
+      links={{ ghLink: "https://github.com/YatesyTea/dspFlask" }}
+    >
+      <p>My final year project for university</p>
+    </ProjectDisplay>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    width: clamp(400px, 80%, 700px);
+  }
+
+  .project-display {
+    margin-bottom: 16px;
+  }
+</style>
