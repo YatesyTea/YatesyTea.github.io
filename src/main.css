@@ -92,6 +92,39 @@
   }
 }
 
+@view-transition {
+  navigation: auto;
+}
+
+@keyframes move-out {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes move-in {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Apply the custom animation to the old and new page states */
+::view-transition-old(main) {
+  animation: 0.25s ease-in both move-out;
+}
+
+::view-transition-new(main) {
+  animation: 0.25s ease-in both move-in;
+}
+
 body {
   width: 80vw;
   height: 100vh;
@@ -125,6 +158,7 @@ main {
   font-family: 'Courier New', Courier, monospace;
   margin-top: 2em;
   text-align: left;
+  view-transition-name: main;
 }
 
 .main-center {
